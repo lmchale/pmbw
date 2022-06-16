@@ -39,7 +39,8 @@
 #include <time.h>
 
 #include <pthread.h>
-#include <malloc.h>
+#include <stdlib.h>
+#include "pthread-barrier.h"
 
 #if ON_WINDOWS
 #include <windows.h>

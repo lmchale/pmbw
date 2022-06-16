@@ -54,14 +54,14 @@ AC_CHECK_LIB(pthread, pthread_mutex_init,
   [AC_MSG_ERROR(pthread library needed!)]
 )
 
-if [ ! "$ON_WINDOWS" ]; then
-
-   AC_CHECK_LIB(rt, clock_gettime,
-     [LIBS="$LIBS -lrt"],
-     [AC_MSG_ERROR(rt library needed!)]
-   )
-
-fi
+#if [ ! "$ON_WINDOWS" ]; then
+#
+#   AC_CHECK_LIB(rt, clock_gettime,
+#     [LIBS="$LIBS -lrt"],
+#     [AC_MSG_ERROR(rt library needed!)]
+#   )
+#
+#fi
 
 HAVE_POSIX_MEMALIGN=0
 AC_CHECK_LIB(c, posix_memalign, [HAVE_POSIX_MEMALIGN=1])

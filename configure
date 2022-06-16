@@ -3445,8 +3445,8 @@ fi
 $as_echo "$ac_cv_lib_rt_clock_gettime" >&6; }
 if test "x$ac_cv_lib_rt_clock_gettime" = xyes; then :
   LIBS="$LIBS -lrt"
-else
-  as_fn_error $? "rt library needed!" "$LINENO" 5
+#else
+#  as_fn_error $? "rt library needed!" "$LINENO" 5
 
 fi
 
